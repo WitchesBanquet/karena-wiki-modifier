@@ -3,6 +3,8 @@ name: Get latest wiki.js version
 on:
   schedule:
     - cron: "0 2 * * *"
+  workflow_dispatch:
+
 jobs:
   get-version:
     runs-on: ubuntu-latest
