@@ -14,7 +14,7 @@ jobs:
           token: ${{ secrets.REPO_GITHUB_TOKEN }}
       - name: Fetch release version
         run: |
-          curl -sL https://api.github.com/repos/swagger-api/swagger-ui/releases/latest | \
+          curl -sL https://api.github.com/repos/requarks/wiki/releases/latest | \
           jq -r ".tag_name" > release-versions/wiki-js-version.txt
       - name: Check for modified files
         id: git-check
